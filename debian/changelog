@@ -1,0 +1,57 @@
+node-icss-utils (5.1.0-3) unstable; urgency=medium
+
+  * Add Breaks: node-css-loader (<< 5.0~)
+
+ -- Pirate Praveen <praveen@debian.org>  Sat, 26 Dec 2020 15:11:19 +0530
+
+node-icss-utils (5.1.0-2) unstable; urgency=medium
+
+  * Reupload to unstable
+  * Use version 4 in watch file
+
+ -- Pirate Praveen <praveen@debian.org>  Thu, 24 Dec 2020 23:58:09 +0530
+
+node-icss-utils (5.1.0-1) experimental; urgency=medium
+
+  * Add nocheck build profile
+  * New upstream version 5.1.0
+  * Update minimum version of node-postcss, drop node-babel7 build dependency
+
+ -- Pirate Praveen <praveen@debian.org>  Sat, 19 Dec 2020 23:50:10 +0530
+
+node-icss-utils (4.1.1-1) unstable; urgency=medium
+
+  * New upstream version 4.1.1
+  * Bump Standards-Version to 4.5.1 (no changes needed)
+  * Bump minimum version of node-postcss to 7.0~
+  * Drop babel 7 support patch (applied upstream)
+  * Enable upstream tests with jest
+  * Update debian/tests/pkg-js/files
+
+ -- Pirate Praveen <praveen@debian.org>  Sat, 05 Dec 2020 17:36:34 +0530
+
+node-icss-utils (3.0.1-2) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * Bump debhelper from deprecated 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update Vcs-* headers from URL redirect.
+  * Use canonical URL in Vcs-Git.
+
+  [ Pirate Praveen ]
+  * Bump Standards-Version to 4.5.0 (no changes needed)
+  * Drop unnecessary build dependency on dh-buildinfo
+  * Switch to Babel 7
+  * Switch to pkg-js-tools auto install
+
+ -- Pirate Praveen <praveen@debian.org>  Thu, 07 May 2020 16:09:49 +0530
+
+node-icss-utils (3.0.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #879928)
+
+ -- Pirate Praveen <praveen@debian.org>  Fri, 27 Oct 2017 16:23:22 +0530
