@@ -1,3 +1,22 @@
+node-icss-utils (5.1.0+~5.1.0-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 12 to 13.
+
+  [ Yadd ]
+  * Update standards version to 4.6.0, no changes needed.
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Fix filenamemangle
+  * Fix GitHub tags regex
+  * Use dh-sequence-nodejs instead of pkg-js-tools
+  * Drop dependency to nodejs
+  * Embed typescript declarations and repack
+
+ -- Yadd <yadd@debian.org>  Thu, 30 Dec 2021 09:40:20 +0100
+
 node-icss-utils (5.1.0-3) unstable; urgency=medium
 
   * Add Breaks: node-css-loader (<< 5.0~)
