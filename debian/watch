@@ -1,5 +1,10 @@
 version=4
 opts=\
 dversionmangle=auto,\
-filenamemangle=s/.*\/v?([\d\.-]+)\.tar\.gz/node-icss-utils-$1.tar.gz/ \
- https://github.com/css-modules/icss-utils/tags .*/archive/v?([\d\.]+).tar.gz
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-icss-utils-$1/ \
+ https://github.com/css-modules/icss-utils/tags .*/archive/.*/v?([\d\.]+).tar.gz group
+
+# It is not recommended use npmregistry. Please investigate more.
+# Take a look at https://wiki.debian.org/debian/watch/
+opts="searchmode=plain,component=types-icss-utils,ctype=nodejs,pgpmode=none,filenamemangle=s/^.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-types-icss-utils-$1/" \
+ https://registry.npmjs.org/@types/icss-utils https://registry.npmjs.org/@types/icss-utils/-/icss-utils-([\d\.]+)@ARCHIVE_EXT@ group
